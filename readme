@@ -7,3 +7,4 @@ sequelize db:create
 
 //Creating tables 
 sequelize db:migrate
+
