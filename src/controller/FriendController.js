@@ -27,7 +27,7 @@ module.exports = {
         const { user_id } = req.params
 
         const user = await User.findByPk(user_id, {
-            include : { association : 'friends'}
+            include : { association : 'friends', attributes : ['name', 'email'], through : {attributes : [] }},
         });
 
         if (!user){

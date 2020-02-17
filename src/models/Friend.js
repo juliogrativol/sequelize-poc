@@ -6,7 +6,8 @@ class Friend extends Model {
             name : DataTypes.STRING,
             email : DataTypes.STRING,
         }, {
-            sequelize
+            sequelize,
+            tableName : 'friends'
         })
     }
 
